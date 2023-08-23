@@ -1,0 +1,143 @@
+body{
+    background: black;
+    
+}
+
+.shape{
+    width: 50rem;
+    height: 50rem;
+    position: relative;
+}
+.bone{
+    background: white;
+    height: 5rem;
+    width: 45rem;
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+}
+.bone::after, .bone::before{
+    content:"";
+    position: absolute;
+    border-radius: 50%;
+    top: -2rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    box-shadow: 0 70px 0 white;
+}
+
+.bone::before{
+    left: -20px;
+}
+
+.bone::after{
+    right: -20px;
+}
+
+.bone:nth-child(1){
+    transform: rotate(45deg);
+}
+
+
+.bone:nth-child(2){
+    transform:rotate(-45deg);
+}
+
+
+.head-top{
+    z-index: 5;
+    position: relative;
+    background: white;
+    width:22rem ;
+    height: 22rem;
+    border: 5px solid black;
+    border-radius: 10rem;
+    top: 13rem;
+    left: 12rem;
+    
+
+}
+
+.hat{
+    position:relative;
+    width: 30rem;
+    height: 1rem;
+    background: orange;
+    top: 10rem;
+    border-radius: 3rem ;
+    left: -4rem;
+}
+.hat::before{
+    content: "";
+    position: absolute;
+    background: orange;
+    bottom:100%;
+    height: 11rem;
+    width: 22.2rem;
+    border-radius: 25rem 25rem 0 0  ;    
+    left: 3.9rem;
+}
+
+.hat::after{
+    content:"";
+    position:absolute;
+    width: 22.2rem;
+    height: 3rem;
+    background: red;
+    left: 3.9rem;
+    top: -3rem;
+    border-radius: 1rem 1rem 0 0 ;
+}
+
+.face {
+    position:relative;
+    width: 2rem;
+    height: 2rem;
+    background: black;
+    top: 18rem;
+    border-radius: 2rem ;
+    left: 10rem;
+}
+
+.face::before{
+    content:"";
+    position:absolute;
+    width: 6rem;
+    height: 6rem;
+    background: black;
+    left: -6.5rem;
+    top: -6.5rem;
+    border-radius: 6rem;
+}
+
+
+.face::after{
+    content:"";
+    position:absolute;
+    width: 6rem;
+    height: 6rem;
+    background: black;
+    left: 2rem;
+    top: -6.5rem;
+    border-radius: 6rem;
+}
+
+
+.head-bottom{
+    z-index: 3;
+    position: relative;
+    background: white;
+    width: 14rem;
+    height: 16rem;
+    border: 5px solid black;
+    border-radius: 10rem;
+    top: 8rem;
+    left: 16.5rem;
+}
+
+
+
+
+
+
