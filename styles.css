@@ -50,9 +50,9 @@ body{
     position: relative;
     background: white;
     width:22rem ;
-    height: 22rem;
+    height: 23rem;
     border: 5px solid black;
-    border-radius: 10rem;
+    border-radius: 11rem;
     top: 13rem;
     left: 12rem;
     
@@ -64,7 +64,7 @@ body{
     width: 30rem;
     height: 1rem;
     background: orange;
-    top: 10rem;
+    top: 10.9rem;
     border-radius: 3rem ;
     left: -4rem;
 }
@@ -74,18 +74,18 @@ body{
     background: orange;
     bottom:100%;
     height: 11rem;
-    width: 22.2rem;
-    border-radius: 25rem 25rem 0 0  ;    
-    left: 3.9rem;
+    width: 22rem;
+    border-radius: 22rem 22rem 0 0  ;    
+    left: 4rem;
 }
 
 .hat::after{
     content:"";
     position:absolute;
-    width: 22.2rem;
+    width: 22rem;
     height: 3rem;
     background: red;
-    left: 3.9rem;
+    left: 4rem;
     top: -3rem;
     border-radius: 1rem 1rem 0 0 ;
 }
@@ -129,12 +129,60 @@ body{
     position: relative;
     background: white;
     width: 14rem;
-    height: 16rem;
+    height: 14rem;
     border: 5px solid black;
-    border-radius: 10rem;
+    border-radius: 7rem ;
     top: 8rem;
     left: 16.5rem;
+    overflow: hidden;
+    transform: scale(1,1.2);
+   
 }
+
+
+.teath{
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    border: 5px solid black;
+    border-radius: 10rem;
+    bottom: 6.2rem;
+    left: -0.7rem ;
+    transform: scale(1.3, 1);
+}
+
+.teath::before{
+    content: "";
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    border: 5px solid black;
+    border-radius: 10rem;
+    top: 2.2rem;
+    left: -0.3rem;
+}
+
+.line{
+    position: absolute;
+    width: 5px;
+    height: 10rem;
+    background: black;
+    top: 6.7rem;
+    left: 7.2rem;    
+}
+
+.line:nth-child(1){
+    rotate: 5deg;
+    left: 4.3rem ;
+    top: 6rem;
+}
+
+.line:nth-child(3) {
+    rotate: -5deg;
+    left:10rem;
+    top: 5.8rem;
+}
+
 
 
 
